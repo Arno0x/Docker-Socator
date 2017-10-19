@@ -25,3 +25,4 @@ if [ -z "${ALLOWED_RANGE}" ]; then
 	socat TCP-L:5000,fork,reuseaddr SOCKS4A:127.0.0.1:${TOR_SITE}:${TOR_SITE_PORT},socksport=9050
 else
 	socat TCP-L:5000,fork,reuseaddr,range=${ALLOWED_RANGE} SOCKS4A:127.0.0.1:${TOR_SITE}:${TOR_SITE_PORT},socksport=9050
+fi

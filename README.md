@@ -8,7 +8,7 @@ Examples
 --------------
 To start the image in background (*daemon mode*) with IP address restriction:
   
-`docker run -d -p 80:5000 -e "ALLOWED_RANGE=10.0.0.0/" -e "TOR_SITE=<target_site.onion>" -e "TOR_SITE_PORT=<target_site_port>" --name socator arno0x0x/socator`
+`docker run -d -p 80:5000 -e "ALLOWED_RANGE=10.0.0.0/8" -e "TOR_SITE=<target_site.onion>" -e "TOR_SITE_PORT=<target_site_port>" --name socator arno0x0x/socator`
 
 To start the image in foreground:
   
